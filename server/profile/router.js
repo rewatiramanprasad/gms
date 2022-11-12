@@ -1,6 +1,6 @@
 const express=require('express');
 const router=express.Router();
-const {}=require('./controller')
+const {addProfile,profile,profileList}=require('./controller')
 router.post('/newprofile',addProfile);//name
 router.get('/profilelist',profileList);
 router.get('/profile',profile);

@@ -10,5 +10,7 @@ const addProfile=(req,res)=>{
 
 
 }
+const profileList=()=>{}
+const profile=()=>{}
 
-module.exports={addProfile,profileList,Profile }
+module.exports={addProfile,profileList,profile }
