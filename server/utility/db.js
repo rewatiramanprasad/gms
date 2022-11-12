@@ -1,18 +1,7 @@
-//const data = require("../config/config.json");
-// const mysql = require(`mysql-await`);
-// const { ValidationError } = require("./errorHandler");
-// const string = {
-//   host: "sql311.epizy.com",
-//   user: "epiz_32955902",
-//   password: "ldbl1xkHgLvVCi4",
-//   database: "epiz_32955902_login",
-//   port:3306,
-//   throwErrors: false,
-// };
+const data = require("../config/config.json");
+
 const { Client } = require("pg");
-const connectionString =
-  "postgres://postgres:QnMoiQdVF0IuvkUb@db.rdbnvztwdvbhvwdqxpwj.supabase.co:6543/postgres" ||
-  process.env.dbstring;
+const connectionString =data["connectionString"]||process.env.dbstring;
 
 const query = async (str) => {
   try {
