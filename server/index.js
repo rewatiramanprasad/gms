@@ -5,4 +5,4 @@ const app=express();
 app.use(express.json());
 app.use(profileRouter);
 
-app.listen(5000, () => { console.log(`running on port http://${data['host']}:${data['port']}`) });
+app.listen(4545||data['port'], () => { console.log(`running on port http://${data['host']}:${data['port']}`) });

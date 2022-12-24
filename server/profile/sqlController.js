@@ -4,5 +4,6 @@ const newMember= async(...data)=>{
 const sql=`insert into profile(email,name,dob,fatherName,address,aadhar,mobile) values($1,$2,$3,$4,$5,$6,$7)`
 const result=await queryWithPara(sql,data);
 console.log(result);
+return result;
 }
 module.exports={newMember}

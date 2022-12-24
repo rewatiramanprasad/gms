@@ -22,7 +22,8 @@ const queryWithPara = async (str, arr) => {
     await client.connect();
     let result = await client.query(`${str}`, arr);
     await client.end();
-    return result.rows;
+    console.log(result);
+    return result.rowCount;
   } catch (error) {
     // next(error)
     console.log(error);
